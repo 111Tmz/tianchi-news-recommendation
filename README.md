@@ -21,3 +21,15 @@ bash test.sh
 最后的排序由于之前老是一步报错就得重新来，直接改成了notebook，自己修改的时候也可以跟着来。
 
 然后本来还想试试冷启动和热度召回的，但是效果很不好，就没继续做了。
+
+---
+更改：
+rank_lgb换cpu
+recall_w2v，修复
+
+换py3.11，
+```
+uv pip install 
+numpy pandas tqdm scikit-learn multitasking annoy gensim lightgbm 
+--index-url https://pypi.tuna.tsinghua.edu.cn/simple/
+```
