@@ -36,8 +36,10 @@ log.info(f'w2v 召回，mode: {mode}')
 
 def word2vec(df_, f1, f2, model_path):
     df = df_.copy()
-    tmp = df.groupby(f1, as_index=False)[f2].agg(
-        {'{}_{}_list'.format(f1, f2): list})
+    tmp = df.groupby(f1, as_index=False)[f2].agg(list).rename(
+    columns={f2: '{}_{}_list'.format(f1, f2)})
+    # tmp = df.groupby(f1, as_index=False)[f2].agg(
+    #     {'{}_{}_list'.format(f1, f2): list})
 
     sentences = tmp['{}_{}_list'.format(f1, f2)].values.tolist()
     del tmp['{}_{}_list'.format(f1, f2)]
@@ -180,6 +182,12 @@ if __name__ == '__main__':
 
     user_item_ = df_click.groupby('user_id')['click_article_id'].agg(
         lambda x: list(x)).reset_index()
+    # user_item_ = df_click.groupby('user_id')['click_article_id'].agg(
+    #    lambda x: list(x)).reset_index()
+    # tmp = df.groupby(f1, as_index=False)[f2].agg(list).rename(
+    #     columns={f2: '{}_{}_list'.format(f1, f2)})
+    # tmp = df.groupby(f1, as_index=False)[f2].agg(
+    #     {'{}_{}_list'.format(f1, f2): list})
     user_item_dict = dict(
         zip(user_item_['user_id'], user_item_['click_article_id']))
 
