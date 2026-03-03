@@ -48,7 +48,7 @@ def train_model(df_feature, df_query):
             df_train.columns))
     feature_names.sort()
 
-
+    '''
     model = lgb.LGBMClassifier(
         num_leaves=64,
         max_depth=10,
@@ -65,6 +65,23 @@ def train_model(df_feature, df_query):
         device_type='gpu',  # 使用 device_type 替代 device
         gpu_device_id=0,
         gpu_use_dp=True,    # 使用双精度
+        boost_from_average=True
+    )'''
+
+    model = lgb.LGBMClassifier(
+        num_leaves=64,
+        max_depth=10,
+        learning_rate=0.05,
+        n_estimators=10000,
+        subsample=0.8,
+        feature_fraction=0.8,
+        reg_alpha=0.5,
+        reg_lambda=0.5,
+        random_state=seed,
+        importance_type='gain',
+        metric=None,
+        # 移除所有GPU参数，使用默认CPU或显式指定
+        # device_type='cpu', # 可以显式指定，但通常不写就是cpu
         boost_from_average=True
     )
 
