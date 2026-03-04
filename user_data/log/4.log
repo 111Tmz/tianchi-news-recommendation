@@ -1,0 +1,18 @@
+2026-03-03 23:22:22,460 - /root/tianchi-news-recommendation/code/recall_w2v.py[line:34] - INFO: w2v 召回，mode: valid
+2026-03-03 23:22:22,547 - /root/tianchi-news-recommendation/code/recall_w2v.py[line:165] - DEBUG: df_click shape: (1590375, 9)
+2026-03-03 23:22:22,562 - /root/tianchi-news-recommendation/code/recall_w2v.py[line:166] - DEBUG:    user_id  click_article_id  click_timestamp  ...  click_country  click_region  click_referrer_type
+0        0             30760    1508211672520  ...              1            25                    2
+1        0            157507    1508211702520  ...              1            25                    2
+2        1            289197    1508211316889  ...              1            25                    6
+3        1             63746    1508211346889  ...              1            25                    6
+4        2             36162    1508211438695  ...              1            25                    2
+
+[5 rows x 9 columns]
+2026-03-03 23:32:32,368 - /root/tianchi-news-recommendation/code/recall_w2v.py[line:200] - DEBUG: df_data.head:    user_id  article_id  sim_score  label
+0        8      234308   1.882693    0.0
+1        8      211442   1.878324    0.0
+2        8      234481   1.874625    0.0
+3        8      209122   1.871644    0.0
+4        8      158179   1.864874    0.0
+2026-03-03 23:32:32,368 - /root/tianchi-news-recommendation/code/recall_w2v.py[line:204] - INFO: 计算召回指标
+2026-03-03 23:32:54,660 - /root/tianchi-news-recommendation/code/recall_w2v.py[line:211] - DEBUG: w2v: 0.11297133488995977, 0.060201699041184144, 0.1571116299865865, 0.06601750061310878, 0.201177405733022, 0.06906969800646934, 0.2533657906503055, 0.07087825075942572, 0.2691142133240598, 0.07122702669515826
