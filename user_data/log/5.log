@@ -1,0 +1,27 @@
+2026-03-03 23:34:23,398 - /root/tianchi-news-recommendation/code/recall.py[line:41] - INFO: 召回合并: valid
+2026-03-03 23:34:23,489 - /root/tianchi-news-recommendation/code/recall.py[line:112] - DEBUG: max_threads 80
+2026-03-03 23:35:48,445 - /root/tianchi-news-recommendation/code/recall.py[line:143] - DEBUG: 召回相似度 itemcf-w2v: 0.1460595452472386
+2026-03-03 23:35:59,479 - /root/tianchi-news-recommendation/code/recall.py[line:143] - DEBUG: 召回相似度 itemcf-binetwork: 0.295743374305382
+2026-03-03 23:36:09,608 - /root/tianchi-news-recommendation/code/recall.py[line:143] - DEBUG: 召回相似度 w2v-itemcf: 0.28882337299740746
+2026-03-03 23:36:17,158 - /root/tianchi-news-recommendation/code/recall.py[line:143] - DEBUG: 召回相似度 w2v-binetwork: 0.10327970927784795
+2026-03-03 23:36:27,599 - /root/tianchi-news-recommendation/code/recall.py[line:143] - DEBUG: 召回相似度 binetwork-itemcf: 0.5965092342130577
+2026-03-03 23:36:35,003 - /root/tianchi-news-recommendation/code/recall.py[line:143] - DEBUG: 召回相似度 binetwork-w2v: 0.10534520262109169
+2026-03-03 23:37:02,480 - /root/tianchi-news-recommendation/code/recall.py[line:160] - DEBUG: recall_final.shape: (13914654, 4)
+2026-03-03 23:37:02,491 - /root/tianchi-news-recommendation/code/recall.py[line:161] - DEBUG: recall_final:    user_id  article_id  label  sim_score
+0        8      209122    0.0   2.092000
+2        8       50644    1.0   1.358452
+1        8      205824    0.0   1.213739
+8        8       36162    0.0   0.751329
+3        8      258195    0.0   0.688278
+2026-03-03 23:37:26,081 - /root/tianchi-news-recommendation/code/recall.py[line:178] - DEBUG: df_useful_recall:    user_id  article_id  label  sim_score
+0        8      209122    0.0   2.092000
+2        8       50644    1.0   1.358452
+1        8      205824    0.0   1.213739
+8        8       36162    0.0   0.751329
+3        8      258195    0.0   0.688278
+2026-03-03 23:37:51,992 - /root/tianchi-news-recommendation/code/recall.py[line:191] - DEBUG: 召回合并后指标: 0.3709573252521238, 0.22455578187357766, 0.47496149833573453, 0.2386388547834748, 0.5638382433305181, 0.24487956116880716, 0.6461076059416762, 0.24779263796269638, 0.6725371354761787, 0.24837819934693847
+2026-03-03 23:37:52,199 - /root/tianchi-news-recommendation/code/recall.py[line:197] - DEBUG: 平均每个用户召回数量：153.94774896011745
+2026-03-03 23:37:52,610 - /root/tianchi-news-recommendation/code/recall.py[line:199] - DEBUG: 标签分布: label
+0.0    4941431
+1.0      31740
+Name: count, dtype: int64
