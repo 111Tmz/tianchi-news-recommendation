@@ -1,0 +1,6 @@
+2026-03-03 22:17:18,807 - /root/tianchi-news-recommendation/code/recall_binetworkGpu.py[line:27] - INFO: Hybrid CPU-GPU binetwork recall, mode: valid, device: cuda
+2026-03-03 22:17:18,892 - /root/tianchi-news-recommendation/code/recall_binetworkGpu.py[line:217] - DEBUG: df_click shape: (1590375, 9)
+2026-03-03 22:17:26,769 - /root/tianchi-news-recommendation/code/recall_binetworkGpu.py[line:224] - INFO: Processing 34734 unique items
+2026-03-03 22:35:41,345 - /root/tianchi-news-recommendation/code/recall_binetworkGpu.py[line:271] - INFO: Calculating recall metrics
+2026-03-03 22:36:02,596 - /root/tianchi-news-recommendation/code/recall_binetworkGpu.py[line:274] - DEBUG: Hybrid CPU-GPU binetwork metrics: (0.34137314322619106, 0.21284920595491738, 0.4142282279298525, 0.22275197003139216, 0.48666103631576335, 0.22775965862931444, 0.5611803865070296, 0.23039334469791745, 0.586169208604501, 0.2309503753878077)
+2026-03-03 22:36:02,663 - /root/tianchi-news-recommendation/code/recall_binetworkGpu.py[line:286] - INFO: Results saved to ../user_data/data/offline/recall_binetwork.pkl
