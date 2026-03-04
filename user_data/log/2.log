@@ -1,0 +1,36 @@
+2026-03-03 21:25:48,433 - /root/tianchi-news-recommendation/code/data.py[line:26] - INFO: 数据处理，mode: valid
+2026-03-03 21:25:49,896 - /root/tianchi-news-recommendation/code/data.py[line:118] - DEBUG: df_train_click shape: (1112623, 9), df_test_click shape: (518010, 9)
+2026-03-03 21:25:50,037 - /root/tianchi-news-recommendation/code/data.py[line:33] - DEBUG: val_users num: 40258
+2026-03-03 21:31:46,000 - /root/tianchi-news-recommendation/code/data.py[line:71] - DEBUG: df_query shape: (90258, 2), df_click shape: (1590375, 9)
+2026-03-03 21:31:46,005 - /root/tianchi-news-recommendation/code/data.py[line:72] - DEBUG:    user_id  click_article_id
+0        8             50644
+1       13            277107
+2       20            285300
+3       22            107190
+4       24            156279
+2026-03-03 21:31:46,015 - /root/tianchi-news-recommendation/code/data.py[line:73] - DEBUG:    user_id  click_article_id  click_timestamp  ...  click_country  click_region  click_referrer_type
+0        0             30760    1508211672520  ...              1            25                    2
+1        0            157507    1508211702520  ...              1            25                    2
+2        1            289197    1508211316889  ...              1            25                    6
+3        1             63746    1508211346889  ...              1            25                    6
+4        2             36162    1508211438695  ...              1            25                    2
+
+[5 rows x 9 columns]
+2026-03-03 21:37:27,908 - recall_itemcf.py[line:30] - INFO: itemcf 召回，mode: valid
+2026-03-03 21:37:28,097 - recall_itemcf.py[line:142] - DEBUG: df_click shape: (1590375, 9)
+2026-03-03 21:37:28,109 - recall_itemcf.py[line:143] - DEBUG:    user_id  click_article_id  click_timestamp  ...  click_country  click_region  click_referrer_type
+0        0             30760    1508211672520  ...              1            25                    2
+1        0            157507    1508211702520  ...              1            25                    2
+2        1            289197    1508211316889  ...              1            25                    6
+3        1             63746    1508211346889  ...              1            25                    6
+4        2             36162    1508211438695  ...              1            25                    2
+
+[5 rows x 9 columns]
+2026-03-03 22:02:37,656 - recall_itemcf.py[line:156] - DEBUG: df_data.head:    user_id  article_id  sim_score  label
+0        8      209122   0.068354    0.0
+1        8      205824   0.053793    0.0
+2        8       50644   0.048166    1.0
+3        8      258195   0.047588    0.0
+4        8       38802   0.037191    0.0
+2026-03-03 22:02:37,656 - recall_itemcf.py[line:160] - INFO: 计算召回指标
+2026-03-03 22:03:19,132 - recall_itemcf.py[line:165] - DEBUG: itemcf: 0.3333498931889314, 0.19656010399588225, 0.4541457598489741, 0.2126601968887956, 0.5663470614536241, 0.22049522182993542, 0.6589000943911769, 0.22382260576224527, 0.6849818669581201, 0.22440124590895272
